@@ -1,0 +1,96 @@
+/***** General *****/
+
+html {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #555;
+	font-size: .8em;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/***** Navigation *****/
+
+#nav ul {
+	float: right;
+}
+
+#nav ul, 
+#footer ul {
+	list-style: none;
+}
+
+#nav li,
+#footer li {
+	display: inline;
+}
+
+/***** Main *****/
+
+#main {
+	clear: right;
+	padding-top: 140px;
+}
+
+#main img {
+	display: block;
+	margin: auto;
+	width: 275px;
+}
+
+#main .btn-group {
+	text-align: center;
+	width: 100%;
+}
+
+#main input {
+	border: 1px solid #DDD;
+	display: block;
+	font-size: 1em;
+	margin: 30px auto;
+	height: 35px;
+	width: 600px;
+}
+
+#main input:hover {
+	border: 1px solid #AAA;
+}
+
+#main input:focus {
+	border: 1px solid #3385ff;
+	box-shadow: none;
+	outline: none;
+}
+
+#main button {
+	background-color: #EEE;
+	border: 1px solid transparent;
+	border-radius: 2px;
+	color: #777;
+	font-size: .8em;
+	font-weight: bold;	
+	padding: 10px 15px;
+	margin: 2px;
+}
+
+#main button:hover {
+	background-color: #f2f2f2;
+	border: 1px solid #d9d9d9;
+	box-shadow: 0 1px 2px #e6e6e6;
+	color: #111;
+}
+
+/***** Footer *****/
+
+#footer ul:first-of-type {
+	float: left;
+}
+
+#footer ul:last-of-type {
+	float: right;
+}
