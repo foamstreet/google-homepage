@@ -2,6 +2,18 @@
 
 html {
 	font-family: Helvetica, Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
 }
 
 a {
@@ -16,25 +28,48 @@ a:hover {
 
 /***** Navigation *****/
 
-#nav ul {
+nav ul {
 	float: right;
+	padding: 20px 20px 0 0;
 }
 
-#nav ul, 
-#footer ul {
+nav ul li:last-child {
+	background-color: #006600;
+	padding: 7px 11px;
+	border-radius: 50%;
+}
+
+nav ul li:last-child a {
+	color: white;
+	font-size: 1em;
+	font-weight: 100;
+	padding: 0;
+}
+
+nav ul li:last-child a:hover {
+	text-decoration: none;
+}
+
+nav ul, 
+footer ul {
 	list-style: none;
 }
 
-#nav li,
-#footer li {
+nav li,
+footer li {
 	display: inline;
+}
+
+nav li {
+	margin: 0 5px;
 }
 
 /***** Main *****/
 
 #main {
 	clear: right;
-	padding-top: 140px;
+	position: relative;
+	top: 170px;
 }
 
 #main img {
@@ -49,12 +84,16 @@ a:hover {
 }
 
 #main input {
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACrElEQVR42u2Xz2sTQRSAX8VSb1K8iNqKooJH2Ux6Ksn+iPQqxZMIehJB0do/IMhmQWsvHr2KSEGk0tSLIoWIYNUKij20F2/N7iaUZnYT0kYzzhMKs0HDJiTdLcwHDwKZSd63781LBiQSSW9JZdkhzfKm1Rz9mjZp/W9YdEU3vXv4HsQZ40FtNG36q5rls//Ej4tmbSS2T15Mvp3ExOPmEMQNbBtMMEyoljcFcQN7PqyAlqNfIG7gYQ0tYNIaxA1MrJPY3wImbUqBKAXSFv0tBSIVMOkvKRDtGKWN/T6FdqRAxFNoWwpEPIXqUqBT6ALU/UVgu8GW4GD3f6f9TRDYNJTDrk7YbtiqUumHwIYoUJuHERDAS0r4CvgFECgbY+cFAR7KT+g1POmCKFDNw6WggHc3fBtVb4CAoyauBgXIG+g1Xh5mRAGah6cggBd11fK/h7lOprIs0H6uRl6KAo5O7kOv4QmPiwJ4Jqqv4FiwCtXjvD2+tRmfK6kZ/ygI2HritK0rDVGgrClJ6DWMwYC/AGuCBMYcIC2V0CzvjmbRz3j3xUjn6CfeYreUJ2wQkGD75INPX1mFfsEFrrcIYCvdhC4paWQakxajpJMr0C9YFg54i7AsClRmh9/xnr0NHcInzZStk2aLwAcGMAD9pPIazvFKVDD5rdnhJeHLX5RTyRPQHpz5o66emMc9wdlPtvA8wF7Aq2BUHh1525qEo5JtR1WeOXpickO9cJIpyuD6xJmhYiZ5ytWSl3mlnuOaf+2zDaLDXmJrSgZ/MYVEugo+gSh+FkSBa4yd5Ul87DZ5XpFl/AyIEjzYjkau8WqshU2cr13HPbgX4gJOD97n465GZlyVvC9mSKloKI2iTnbwNT+gBX54H+IaXAtxJzE3ycSAFqSAFJACUkAikXD+AHj5/wx2o5osAAAAAElFTkSuQmCC) no-repeat center right 10px;
+	background-size: 24px 24px;
 	border: 1px solid #DDD;
 	display: block;
 	font-size: 1em;
-	margin: 30px auto;
 	height: 35px;
-	width: 600px;
+	margin: 30px auto;
+	padding: 0 15px;
+	vertical-align: middle;
+	width: 575px;
 }
 
 #main input:hover {
@@ -87,10 +126,33 @@ a:hover {
 
 /***** Footer *****/
 
-#footer ul:first-of-type {
-	float: left;
+footer {
+	background-color: #EEE;
+	border-top: 1px solid #DDD;
+	bottom: 0;
+	height: 40px;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	width: 100%;
 }
 
-#footer ul:last-of-type {
-	float: right;
+footer ul {
+	line-height: 40px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+footer ul:first-of-type {
+	position: absolute;
+	left: 10px;
+}
+
+footer ul:last-of-type {
+	position: absolute;
+	right: 10px;
+}
+
+footer li {
+	padding: 0 15px;
 }
